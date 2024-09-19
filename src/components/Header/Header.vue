@@ -9,7 +9,7 @@
             <p class="header__second">Un código a la vez</p>
         </div>
         <div class="header__menu">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"         stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />
             </svg>
@@ -19,13 +19,19 @@
 
 <style lang="scss">
 .header {
+    height: 50px;
     display: flex;
     justify-content: space-between;
-
+    padding: 12px;
+    &__logo{
+        cursor: pointer;
+    }
     &__name {
         font-family: 'Ubuntu', sans-serif;
         font-weight: 800;
         margin: 0;
+        font-size: 20px;
+        color:#383737
     }
 
     &__main,
@@ -34,7 +40,6 @@
         display: inline-block;
         opacity: 0;
         position: absolute;
-        font-family: 'Ubuntu', sans-serif;
     }
 
     &__main {
@@ -46,9 +51,14 @@
     }
 
     &__menu {
-        width: 40px;
-        height: 40px;
+        width: 35px;
+        height: 35px;
         cursor: pointer;
+        &:active{
+            outline: none; 
+            box-shadow: none; 
+            -webkit-tap-highlight-color: transparent;
+        }
     }
 }
 
