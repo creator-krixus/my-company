@@ -30,7 +30,7 @@ import develop from "../../assets/develop.jpg"
         }
         &__title{
             margin: 0px;
-            font-weight: 700;
+            font-weight: 800;
             font-size: 24px;
         }
         &__description{
