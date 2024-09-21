@@ -72,11 +72,10 @@ const cards = reactive([
         }
     }
     @media (min-width: 1024px) {
+        margin-top: -114px;
         &__content {
             grid-template-columns: repeat(4, 1fr);
         }
     }
-}
-
-    
+}  
 </style>
