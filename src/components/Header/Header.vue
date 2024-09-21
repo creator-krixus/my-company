@@ -3,11 +3,13 @@
 
 <template>
     <div class="header">
-        <div class="header__logo">
-            <p class="header__name">Softinkra</p>
-            <p class="header__main">Innovando el futuro</p>
-            <p class="header__second">Un código a la vez</p>
-        </div>
+        <router-link to="/" class="header__router">
+            <div class="header__logo">
+                <p class="header__name">Softinkra</p>
+                <p class="header__main">Innovando el futuro</p>
+                <p class="header__second">Un código a la vez</p>
+            </div>
+        </router-link>
         <div class="header__menu">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"         stroke-width="1.5"
                 stroke="currentColor" class="size-6">
@@ -23,6 +25,10 @@
     display: flex;
     justify-content: space-between;
     padding: 12px;
+    &__router{
+        text-decoration: none;
+        color:#383737
+    }
     &__logo{
         cursor: pointer;
     }
