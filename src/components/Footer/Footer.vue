@@ -7,6 +7,7 @@ const year = new Date().getFullYear()
             <p class="footer__name">Softinkra</p>
             <p class="footer__name">Contactanos</p>
             <p class="footer__name">Preguntas frecuentes</p>
+            <router-link to="/politics" class="footer__name">Politicas de privacidad</router-link>
         </div>
         <div class="footer__under">
             <p class="footer__text">Softinkra © Todos los derechos reservados {{ year }}
@@ -24,6 +25,8 @@ const year = new Date().getFullYear()
         cursor: pointer;
         margin: 5px 0;
         font-size: 18px;
+        text-decoration: none;
+        color:#383737;
         &:active{
             outline: none; 
             box-shadow: none; 
