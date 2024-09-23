@@ -37,7 +37,7 @@
         font-weight: 800;
         margin: 0;
         font-size: 20px;
-        color:#383737
+        color:#383737;
     }
 
     &__main,
