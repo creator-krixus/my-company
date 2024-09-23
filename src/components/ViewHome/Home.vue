@@ -4,7 +4,7 @@ import develop from "../../assets/develop.jpg"
 <template>
     <div class="home">
         <div class="home__containerImage">
-            <img class="home__imagen" :src="develop" alt="">
+            <img class="home__imagen" :src="develop" alt="develop">
         </div>
         <div class="home__containerSlogan">
             <p class="home__title">Transforma tu vision en</p>
