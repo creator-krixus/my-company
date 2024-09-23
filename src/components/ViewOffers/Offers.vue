@@ -37,7 +37,7 @@ const cards = reactive([
                 <Card :data="card"/>
             </div>
         </div>
-        <img :src="waveBottom" alt="wave">
+        <img class="offers__waveBottom" :src="waveBottom" alt="wave">
     </div>
 </template>
 <style lang="scss">
@@ -60,6 +60,9 @@ const cards = reactive([
         font-weight: 800;
         text-align: center;
         background-color: #cbdedd;
+    }
+    &__waveBottom{
+      margin-top: -5px;
     }
     @media (min-width: 500px) {
         &__content {
