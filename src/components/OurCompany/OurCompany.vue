@@ -40,7 +40,7 @@ onUnmounted(() => {
       </div>
       <div class="ourCompany__contacUs">
         <a class="ourCompany__btn" href="https://wa.me/+573113166588?text=Hola%20me%20gustaría%20tener%20más%20información%20sobre%20los%20planes." target="_blank" rel="noopened">
-          <p>Contactanos</p>
+          <h3>Contactanos</h3>
         </a>
         <a href="tel:+573113166588" class="ourCompany__phone">
           <div class="ourCompany__imagePhone">
@@ -64,12 +64,14 @@ onUnmounted(() => {
       font-size: 30px;
       text-align: center;
       padding-bottom: 12px;
+      font-weight: 800;
     }
     &__image, &__content{
       text-align: center;
     }
     &__image{
       position: relative;
+      border-radius: 12px 12px 0 12px;
     }
     &__ball{
       background: #e7f0f0;

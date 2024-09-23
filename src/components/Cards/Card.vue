@@ -7,7 +7,7 @@ const truncateText = (text, maxLength = 200) => {
     return text.slice(0, maxLength) + '...';
   }
   return text;
-}
+};
 </script>
 <template>
     <div class="card">
@@ -24,6 +24,7 @@ const truncateText = (text, maxLength = 200) => {
         border-radius: 12px;
         width: 100%;
         padding: 12px;
+        box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.4);
         &__title{
             font-size: 20px;
             font-weight: 700;

@@ -7,11 +7,11 @@ import develop from "../../assets/develop.jpg"
             <img class="home__imagen" :src="develop" alt="develop">
         </div>
         <div class="home__containerSlogan">
-            <p class="home__title">Transforma tu vision en</p>
-            <p class="home__title">realidad digital</p>
-            <p class="home__description">Te ayudamos a crear soluciones personalizadas para tu negocio, adaptándonos a tus necesidades y desafíos. Juntos impulsamos tu crecimiento con estrategias innovadoras y efectivas.</p>
+            <p class="home__title">Convierte tu visión en una</p>
+            <p class="home__title">realidad digital exitosa</p>
+            <p class="home__description">Te ofrecemos soluciones personalizadas, adaptadas a las necesidades y desafíos de tu negocio. Trabajamos contigo para impulsar tu crecimiento mediante estrategias innovadoras y efectivas. Nuestro enfoque te garantiza resultados medibles y un servicio cercano, diseñado para superar tus expectativas. Juntos llevamos tu empresa al siguiente nivel.</p>
             <a class="home__btn" href="https://wa.me/+573113166588?text=Hola%20me%20gustaría%20tener%20más%20información%20sobre%20los%20planes." target="_blank" rel="noopened">
-                <div >Contactanos</div>
+                <h3 >Contactanos</h3>
             </a>
         </div>
     </div>
@@ -82,6 +82,7 @@ import develop from "../../assets/develop.jpg"
             &__imagen{
                 width:100%;
                 margin: 20px 0 0 0;
+                border-radius: 5px 0 0 5px;
             }
         }
     }

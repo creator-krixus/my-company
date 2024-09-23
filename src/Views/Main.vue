@@ -2,6 +2,7 @@
 import Home from "../components/ViewHome/Home.vue";
 import Offers from "../components/ViewOffers/Offers.vue";
 import OurCompany from "../components/OurCompany/OurCompany.vue";
+import Plans from "../components/Plans/Plans.vue"
 
 </script>
 
@@ -10,6 +11,7 @@ import OurCompany from "../components/OurCompany/OurCompany.vue";
       <Home />
       <Offers />
       <OurCompany />
+      <Plans />
       <router-view />
   </div>
 </template>

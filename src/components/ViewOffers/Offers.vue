@@ -26,7 +26,7 @@ const cards = reactive([
         description:"Desarrollo de aplicaciones web progresivas (PWAs) y móviles, brindando experiencias interactivas y rápidas en diferentes plataformas, utilizando frameworks como Vue.js, React Native, y Flutter.",
         image:"https://firebasestorage.googleapis.com/v0/b/save-images-544a9.appspot.com/o/fotos%2Fappmoviles.jpg?alt=media&token=ecebc2a4-4cba-426a-89b8-9d01b907918a"
     }
-])
+]);
 </script>
 <template>
     <div class="offers">
