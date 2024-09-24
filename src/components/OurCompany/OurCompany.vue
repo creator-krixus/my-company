@@ -1,20 +1,20 @@
 <script setup>
-import { ref, onMounted, onUnmounted } from 'vue';
+  import { ref, onMounted, onUnmounted } from 'vue';
 
-const sizeWidth = ref(document.documentElement.clientWidth);
+  const sizeWidth = ref(document.documentElement.clientWidth);
 
-const updateWidth = () => {
-  sizeWidth.value = document.documentElement.clientWidth;
-};
+  const updateWidth = () => {
+    sizeWidth.value = document.documentElement.clientWidth;
+  };
 
-onMounted(() => {
-  window.addEventListener('resize', updateWidth);
-});
+  onMounted(() => {
+    window.addEventListener('resize', updateWidth);
+  });
 
 
-onUnmounted(() => {
-  window.removeEventListener('resize', updateWidth);
-});
+  onUnmounted(() => {
+    window.removeEventListener('resize', updateWidth);
+  });
 </script>
 <template>
   <div class="ourCompany">

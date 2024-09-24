@@ -57,7 +57,11 @@ const cards = reactive([
     grid-template-columns: repeat(3, 1fr);; 
     }
   @media (min-width: 1024px) {
-    width: 1200px;
+    width: 1100px;
+    grid-template-columns: repeat(3, 1fr);
+    }
+  @media (min-width: 1440px) {
+    width: 1300px;
     grid-template-columns: repeat(3, 1fr);
     }
 }
