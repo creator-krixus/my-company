@@ -19,7 +19,7 @@
 <template>
   <div class="formContact">
     <h1 class="formContact__title">Contactanos</h1>
-    <form class="formContact__form" action="edeb9a87750a0e079ff4fddb8ee87c2a" method="POST">
+    <form class="formContact__form" action="https://formsubmit.co/wilsonrueda2@gmail.com" method="POST">
       <img class="formContact__image" src="https://firebasestorage.googleapis.com/v0/b/save-images-544a9.appspot.com/o/fotos%2Ftelephone-612061_1280.jpg?alt=media&token=9d7ece99-9904-4c93-a2a3-7bbc4df46e52" alt="contact" v-if="sizeWidth >= 600">
       <div class="formContact__container">
         <div class="formContact__content">
