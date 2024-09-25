@@ -1,11 +1,44 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
+  import Loader from "./Loader.vue";
+  import Success from './Success.vue';
 
   const sizeWidth = ref(document.documentElement.clientWidth);
+  const isLoading = ref(false);
+  const isSent = ref(false);
 
   const updateWidth = () => {
     sizeWidth.value = document.documentElement.clientWidth;
   };
+
+  const sendConfirm = async(event) => {
+      event.preventDefault();
+      const formData = new FormData(event.target);
+      isLoading.value = true;
+      isSent.value = false;
+
+      try {
+        const response = await fetch('https://formsubmit.co/wilsonrueda2@gmail.com', {
+          method: 'POST',
+          body: formData,
+        });
+
+        if (response.ok) {
+          setTimeout(()=>{
+            isSent.value = false;
+            window.location.reload()
+          }, 2000)
+          isSent.value = true;
+        } else {
+          throw new Error('Error en el envío del formulario');
+        }
+      } catch (error) {
+        console.log(error);
+        
+      } finally {
+        isLoading.value = false;
+      }
+  }
 
   onMounted(() => {
     window.addEventListener('resize', updateWidth);
@@ -19,9 +52,11 @@
 <template>
   <div class="formContact">
     <h1 class="formContact__title">Contactanos</h1>
-    <form class="formContact__form" action="https://formsubmit.co/wilsonrueda2@gmail.com" method="POST">
+    <form class="formContact__form" @submit="sendConfirm">
       <img class="formContact__image" src="https://firebasestorage.googleapis.com/v0/b/save-images-544a9.appspot.com/o/fotos%2Ftelephone-612061_1280.jpg?alt=media&token=9d7ece99-9904-4c93-a2a3-7bbc4df46e52" alt="contact" v-if="sizeWidth >= 600">
       <div class="formContact__container">
+        <Loader :isVisible="isLoading"/>
+        <Success :isVisible="isSent"/>
         <div class="formContact__content">
           <div class="formContact__name">
             <input type="text" name="name" class="" placeholder="Nombre completo" required>
@@ -40,8 +75,8 @@
           </div>
         </div>
         <button type="submit" class="formContact__send">Enviar</button>
-        <!-- Cambiar por la ip local o network para trabajar -->
-        <input type="hidden" name="_next" value="http://www.softinkra.com">
+         <!-- Cambiar por la ip local o network para trabajar -->
+        <input type="hidden" name="_next" value="https://www.softinkra.com">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
       </div>
