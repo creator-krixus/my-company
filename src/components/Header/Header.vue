@@ -2,7 +2,7 @@
 </script>
 
 <template>
-    <div class="header">
+    <div class="header" id="header">
         <router-link to="/" class="header__router">
             <div class="header__logo">
                 <p class="header__name">Softinkra</p>
@@ -10,7 +10,7 @@
                 <p class="header__second">Un código a la vez</p>
             </div>
         </router-link>
-        <div class="header__menu">
+        <div class="header__menu" v-if="false">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"         stroke-width="1.5"
                 stroke="currentColor" class="size-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5M12 17.25h8.25" />

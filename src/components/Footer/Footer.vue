@@ -4,10 +4,16 @@ const year = new Date().getFullYear()
 <template >
     <div class="footer">
         <div class="footer__container">
-            <p class="footer__name">Softinkra</p>
-            <p class="footer__name">Contactanos</p>
-            <p class="footer__name">Preguntas frecuentes</p>
-            <router-link to="/politics" class="footer__name">Politicas de privacidad</router-link>
+          <div>
+            <a href="#header" class="footer__name">Softinkra</a>
+          </div>
+          <div>
+            <a href="/#contact" class="footer__name">Contactanos</a>
+          </div>
+          <div>
+            <router-link to="/faq" class="footer__name">Preguntas frecuentes</router-link>
+          </div>
+          <router-link to="/politics" class="footer__name">Politicas de privacidad</router-link>
         </div>
         <div class="footer__under">
             <p class="footer__text">Softinkra © Todos los derechos reservados {{ year }}

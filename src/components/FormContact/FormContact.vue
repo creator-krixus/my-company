@@ -50,7 +50,7 @@
   });
 </script>
 <template>
-  <div class="formContact">
+  <div class="formContact" id="contact">
     <h1 class="formContact__title">Contactanos</h1>
     <form class="formContact__form" @submit="sendConfirm">
       <img class="formContact__image" src="https://firebasestorage.googleapis.com/v0/b/save-images-544a9.appspot.com/o/fotos%2Ftelephone-612061_1280.jpg?alt=media&token=9d7ece99-9904-4c93-a2a3-7bbc4df46e52" alt="contact" v-if="sizeWidth >= 600">
@@ -71,7 +71,7 @@
             <input type="text" name="subject" class="" placeholder="Asunto" required>
           </div>
           <div class="formContact__message">
-            <textarea placeholder="Tu mensaje" class="" name="message" rows="6" required></textarea>
+            <textarea placeholder="Mensaje" class="" name="message" rows="6" required></textarea>
           </div>
         </div>
         <button type="submit" class="formContact__send">Enviar</button>
@@ -113,6 +113,9 @@
       padding: 12PX;
       resize: none;
       font-size: 16px;
+    }
+    textarea{
+      font-size: 19px;
     }
     &__content{
       display: flex;
